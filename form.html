@@ -16,8 +16,8 @@
 
         <!--IMPORTANDO -->
         <link rel="stylesheet" href="css/style.css">
-        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
-        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <link rel="stylesheet" href="css/normalize.css">
+        <script src="js/jquery-1.11.1.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
         <script src="js/form.js"></script>
     </head>
@@ -77,11 +77,21 @@
                 </ul>
             </div>
 
-            <form role="form">
+            <form class="formulario" role="form">
                 <div class="tab-content">
                     <div class="tab-pane active" role="tabpanel" id="step1">
                         <h3>Dados Gerais</h3>
                         <p>sdfghj</p>
+
+                        <label for="professor-formador"><h5 class="">Professor Formador</h5></label>
+                        <input class="" type="text" name="" id="professor-formador">
+
+                        <label for="disciplina"><h5>Disciplina</h5></label>
+                        <select name="" id="">
+                            <option value="">Mídias</option>
+                        </select>
+
+
                         <ul class="list-inline pull-right">
                             <li><button type="button" class="btn btn-primary next-step">Salvar e continuar</button></li>
                         </ul>
