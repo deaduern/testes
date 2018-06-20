@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+}
+
+.aba > input {display:none}
+.aba > input + div {display:none}
+.aba > input:checked + div {display:block}
+
+.abas input {display:none}
+.abas input:checked + label {color:red}
+.abas .conteudo {display:none}
+
+#aba1:checked ~ .c1,
+#aba2:checked ~ .c2,
+#aba3:checked ~ .c3,
+#aba4:checked ~ .c4,
+#aba5:checked ~ .c5
+
+  {display:block}
+
