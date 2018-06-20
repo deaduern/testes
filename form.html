@@ -20,6 +20,7 @@
         <script src="js/jquery-1.11.1.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
         <script src="js/form.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
     </head>
 
 <body>
@@ -83,57 +84,149 @@
                         
                         <div class="row">
                         <div class="col-md-12">
-                            <h3>Dados Gerais</h3>
+                            <h3>
+                                <i class="fas fa-address-book"></i>
+                                Dados Gerais
+                            </h3>
                             <div class="form-group">
                                 <label for="professor-formador">Professor formador:</label>
-                                <input type="text" class="form-control" name="" id="professor-formador">
+                                <input type="text" class="form-control" name="professor-formador" id="professor-formador">
                             </div>
                         </div>
                         
-                        <div class="col-md-4">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="polo">Polo:</label>
+                                <select id="polo" class="form-control">
+                                    <option hidden="true">Selecione</option>
+                                    <option>Exemplo</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
                             <div class="form-group">
                                 <label for="disciplina">Disciplina:</label>
                                 <select id="disciplina" class="form-control">
+                                    <option hidden="true">Selecione</option>
                                     <option>Default select</option>
                                 </select>
                             </div>					
                         </div>
             
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="polo">Polo:</label>
-                                <select id="polo" class="form-control">
-                                    <option>Default select</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="idade">Carga Horária</label>
-                                <select class="form-control">
-                                    <option>Default select</option>
-                                </select>
-                            </div>					
-                        </div>
                         </div>
                         
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="form-group">
                                     <label for="inicio-disciplina">Início da disciplina:</label>
                                     <input type="date" class="form-control" name="inicio-disciplina" id="inicio-disciplina">
                                 </div>					
                             </div>
                 
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="conclusao-disciplina">Conclusão da disciplina:</label>
+                                    <input type="date" class="form-control" name="conclusao-disciplina" id="conclusao-disciplina">
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="idade">Carga Horária:</label>
+                                    <select id="idade" class="form-control">
+                                        <option hidden="true">Selecione</option>
+                                        <option>15 h/a</option>
+                                        <option>30 h/a</option>
+                                        <option>45 h/a</option>
+                                        <option>60 h/a</option>
+                                        <option>75 h/a</option>
+                                        <option>90 h/a</option>
+                                    </select>
+                                </div>					
+                            </div>
+                        </div>
+
+                        <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="polo">Polo:</label>
-                                    <select id="polo" class="form-control">
-                                        <option>Default select</option>
+                                    <label for="modalidade-disciplina">Modalidade da Disciplina:</label>
+                                    <select id="modalidade-disciplina" class="form-control">
+                                        <option hidden="true">Selecione</option>
+                                        <option>Semanal</option>
+                                        <option>Modular</option>
                                     </select>
                                 </div>
                             </div>
+    
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="conceito-aprovacao">Média/Conceito de aprovação:</label>
+                                    <input type="number" class="form-control" name="conceito-aprovacao" id="conceito-aprovacao" step="0.1" placeholder="Exemplo: 7,0" min="7" max="10">
+                                </div>					
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="ementa">Ementa:</label>
+                                    <textarea class="form-control" name="ementa" id="ementa" cols="30" rows="5"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="objetivo-geral">Objetivo Geral:</label>
+                                    <input type="text" class="form-control" name="objetivo-geral" id="objetivo-geral">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="objetivo-especifico">Objetivos específicos:</label>
+                                    <textarea class="form-control" name="objetivo-especifico" id="objetivo-especifico" cols="30" rows="5"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <h4>
+                                <i class="fa fa-comments"></i>
+                                Encontros presenciais
+                            </h4>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="local-encontpresen">Local:</label>
+                                    <input type="text" class="form-control" name="local-encontpresen" id="local-encontpresen">
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="data-encontpresen">Data:</label>
+                                    <input type="date" class="form-control" name="data-encontpresen" id="data-encontpresen">
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="tipo-avl-encontpresen">Tipo de Avaliação:</label>
+                                    <select id="tipo-avl-encontpresen" class="form-control">
+                                        <option hidden="true">Selecione</option>
+                                        <option>Prova tradicional</option>
+                                        <option>Prova via Moodle</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
                         </div>
 
                         <!-- BOTÃO SALVAR E CONTINUAR -->
