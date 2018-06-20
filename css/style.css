@@ -47,21 +47,39 @@ span.round-tab {
     text-align: center;
     font-size: 25px;
 }
+
 span.round-tab i{
     color:#555555;
 }
+
+span.round-tab img{
+    padding-bottom: 4px;
+}
+
+span.round-tab img:hover{
+    transition: all 0.1s;
+    filter:drop-shadow(3px 3px 1px gray);
+    padding-bottom: 12px;
+}
+
 .wizard li.active span.round-tab {
     background: #fff;
-    border: 2px solid black;
-    
+    border: 3px solid red;  
 }
+
+.wizard li.active span.round-tab img:hover {
+    transition: all 0.1s;
+    filter:drop-shadow(3px 3px 1px gray);
+    padding-bottom: 12px;
+}
+
 .wizard li.active span.round-tab i{
-    color: black;
+    color: red;
 }
 
 span.round-tab:hover {
     color: #333;
-    border: 2px solid #333;
+    border: 3px solid rgb(207, 207, 207);
 }
 
 .wizard .nav-tabs > li {
@@ -76,7 +94,7 @@ span.round-tab:hover {
     margin: 0 auto;
     bottom: 0px;
     border: 5px solid transparent;
-    border-bottom-color: black;
+    border-bottom-color: red;
     transition: 0.1s ease-in-out;
 }
 
@@ -88,7 +106,7 @@ span.round-tab:hover {
     margin: 0 auto;
     bottom: 0px;
     border: 10px solid transparent;
-    border-bottom-color: black;
+    border-bottom-color: red;
 }
 
 .wizard .nav-tabs > li a {
@@ -112,6 +130,10 @@ span.round-tab:hover {
     margin-top: 0;
 }
 
+.other-icons{
+    width: 45px;
+}
+
 @media( max-width : 585px ) {
 
     .wizard {
@@ -124,6 +146,10 @@ span.round-tab:hover {
         width: 50px;
         height: 50px;
         line-height: 50px;
+    }
+
+    .other-icons{
+        width: 30px;
     }
 
     .wizard .nav-tabs > li a {
