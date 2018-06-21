@@ -124,7 +124,7 @@ span.round-tab:hover {
 
 .wizard .tab-pane {
     position: relative;
-    padding-top: 50px;
+    padding-top: 25px;
 }
 
 .wizard h3 {
@@ -133,6 +133,20 @@ span.round-tab:hover {
 
 .other-icons{
     width: 45px;
+}
+
+.btn-adicionar{
+    height: 34px;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: rgb(182, 238, 208);
+    border: 0px solid rgb(177, 177, 177);
+    border-radius: 2;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    cursor: pointer;
 }
 
 @media( max-width : 585px ) {
