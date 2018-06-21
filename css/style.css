@@ -136,7 +136,7 @@ span.round-tab:hover {
 }
 
 .btn-adicionar{
-    height: 34px;
+    height: 26px;
     display: block;
     width: 100%;
     font-size: 14px;
@@ -147,6 +147,7 @@ span.round-tab:hover {
     border-radius: 2;
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     cursor: pointer;
+    margin-bottom: 6px; 
 }
 
 @media( max-width : 585px ) {
